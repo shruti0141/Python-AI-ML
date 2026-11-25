@@ -1,0 +1,25 @@
+import numpy as np
+marks= np.array([[70, 80, 90],
+                 [60, 75, 85],
+                 [88, 92, 79],
+                 [55, 65, 70]])
+print(marks.shape)
+
+print(marks[:2,])
+
+print(marks[:,2])
+
+print(" Student average", marks.mean(axis=1))
+print("subject average", marks.mean(axis=0))
+
+grace_marks= marks+5
+
+print("\n marks after adding 5 grace marks:\n", grace_marks)
+
+weights= np.array([0.3, 0.3, 0.4])
+Weighted_scores = np.dot(marks, weights)
+
+print("Weighted_scores", Weighted_scores)
+
+
+

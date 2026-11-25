@@ -1,0 +1,20 @@
+import pandas as pd
+import csv
+csv=id,Name,department,salary,city
+1, Arun, Sales, 30000,Chennai
+2,Priya,HR,45000,Chennai
+3,Rahul,IT,60000,Bangalore
+4,Divya,IT,75000,Chennai
+5,Karthik,finance,90000,Mumbai
+6,Suresh,IT,68000,Chennai
+7,Anitha,HR,48000,Mumbai
+
+with open("employ.csv","w") as file:
+   write = file.write(csv)
+   df = pd.read_csv("employ.csv")
+   #print( df.info())
+   
+
+
+
+ 
